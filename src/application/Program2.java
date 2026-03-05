@@ -39,6 +39,7 @@ public class Program2 {
 		depDao.deleteById(id);
 		System.out.println("Delete completed!");
 
+		DaoFactory.closeDepartmentDao();
 		sc.close();
 	}
 }
