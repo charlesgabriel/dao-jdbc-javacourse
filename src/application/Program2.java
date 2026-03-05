@@ -33,6 +33,12 @@ public class Program2 {
 		depDao.update(dep);
 		System.out.println("Update completed!");
 
+		System.out.println("\n= = = = = TEST 6 Department -> delete = = = = =");
+		System.out.print("Enter id for delete test: ");
+		int id = sc.nextInt();
+		depDao.deleteById(id);
+		System.out.println("Delete completed!");
+
 		sc.close();
 	}
 }
