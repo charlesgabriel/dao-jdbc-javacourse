@@ -27,6 +27,12 @@ public class Program2 {
 		depDao.insert(newDep);
 		System.out.println("Inserted! New id: " + newDep.getId());
 
+		System.out.println("\n= = = = = TEST 5: Department -> update = = = = =");
+		dep = depDao.findById(1);
+		dep.setName("Food");
+		depDao.update(dep);
+		System.out.println("Update completed!");
+
 		sc.close();
 	}
 }
